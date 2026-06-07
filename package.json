@@ -5,21 +5,27 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc && vite build",
+    "build": "build && vite build",
     "preview": "vite preview",
     "test:e2e": "cypress run",
     "test:unit": "vitest",
     "lint": "eslint ."
   },
   "dependencies": {
+    "@capacitor/android": "8.3.4",
     "@capacitor/app": "8.1.0",
     "@capacitor/core": "8.3.4",
     "@capacitor/haptics": "8.0.2",
     "@capacitor/keyboard": "8.0.3",
+    "@capacitor/splash-screen": "^8.0.1",
     "@capacitor/status-bar": "8.0.2",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
     "@ionic/vue": "^8.0.0",
     "@ionic/vue-router": "^8.0.0",
-    "ionicons": "^7.0.0",
+    "@mui/icons-material": "^9.0.1",
+    "@mui/material": "^9.0.1",
+    "ionicons": "^8.0.13",
     "vue": "^3.3.0",
     "vue-router": "^4.2.0"
   },
@@ -27,17 +33,16 @@
     "@capacitor/cli": "8.3.4",
     "@vitejs/plugin-legacy": "^5.0.0",
     "@vitejs/plugin-vue": "^4.0.0",
-    "@vue/eslint-config-typescript": "^12.0.0",
     "@vue/test-utils": "^2.3.0",
     "cypress": "^13.5.0",
     "eslint": "^8.35.0",
     "eslint-plugin-vue": "^9.9.0",
     "jsdom": "^22.1.0",
-    "terser": "^5.4.0",
-    "typescript": "~5.9.0",
+    "sass-embedded": "^1.100.0",
+    "terser": "^5.48.0",
+    "typescript": "^6.0.3",
     "vite": "^5.0.0",
-    "vitest": "^0.34.6",
-    "vue-tsc": "^2.1.10"
+    "vitest": "^0.34.6"
   },
   "description": "An Ionic project"
 }
