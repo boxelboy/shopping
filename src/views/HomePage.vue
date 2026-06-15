@@ -156,7 +156,7 @@ onMounted(async () => {
 
       <div id="container" :key="renderKey">
         <p v-for="(item, idx) in listArr" :key="idx">
-          {{ item || 'Loading...' }} <ion-icon name="trash-outline" @click="removeFromList()"></ion-icon>
+          {{ item || 'Loading...' }} <ion-icon name="trash-outline" @click="removeFromList(idx)"></ion-icon>
         </p>
         <p>
           <input placeholder="Enter new item" v-model="newItem" autocomplete="off" /> <ion-icon class="tick" name="checkmark-outline" @click="addNewItem()"></ion-icon>
