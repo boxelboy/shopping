@@ -1,6 +1,6 @@
 <script setup>
 import { onMounted, ref } from 'vue'
-import { IonContent, IonHeader, IonPage, IonIcon, IonTitle, IonToolbar, isPlatform } from '@ionic/vue'
+import { IonContent, IonHeader, IonPage, IonIcon, IonTitle, IonToolbar } from '@ionic/vue'
 import {addIcons} from "ionicons"
 import { trashOutline, checkmarkOutline, closeCircleOutline, refreshOutline } from 'ionicons/icons'
 
