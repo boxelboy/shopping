@@ -15,3 +15,18 @@ ion-icon {
 ion-icon.hydrated {
     color: var(--ion-toolbar-color);
 }
+
+ion-content {
+    --overflow: auto;
+    --padding-bottom: env(safe-area-inset-bottom); /* This forces Ionic to respect the bottom system navigation bar */
+}
+
+/* If your input field is inside an ion-footer, add this too */
+ion-footer ion-toolbar {
+    padding-bottom: env(safe-area-inset-bottom);
+}
+
+/* If your input is just a standard HTML input fixed to the bottom */
+input[type="text"], textarea {
+    margin-bottom: env(safe-area-inset-bottom);
+}
