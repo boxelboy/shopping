@@ -2,18 +2,19 @@
 http://ionicframework.com/docs/theming/ */
 
 :root.md {
-    --ion-background-color: #ccc;
+    --ion-background-color: #fff;
     --ion-text-color: #000;
-    --ion-toolbar-color: #8c8c8c !important;
-    --ion-toolbar-background: #000;
+    --ion-toolbar-color: #ff0000 !important;
+    --ion-toolbar-background: #ff0000;
+    --ion-toolbar-icon-color: #fff !important;
 }
 
 ion-icon {
-    color: #000;
+    color: var(--ion-toolbar-color);
 }
 
 ion-icon.hydrated {
-    color: var(--ion-toolbar-color);
+    color: var(--ion-toolbar-icon-color);
 }
 
 ion-content {

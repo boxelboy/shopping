@@ -41,3 +41,11 @@ const app = createApp(App)
 router.isReady().then(() => {
   app.mount('#app');
 });
+
+/* Ionic commands
+ionic build
+ionic cap add android
+ionic cap copy - always do after build
+ionic cap sync
+ionic cap open android
+ */

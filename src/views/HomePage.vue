@@ -156,7 +156,7 @@ onMounted(async () => {
 
       <div id="container" :key="renderKey">
         <p v-for="(item, idx) in listArr" :key="idx">
-          {{ item || 'Loading...' }} <ion-icon name="trash-outline" @click="removeFromList(idx)"></ion-icon>
+          {{ item || 'Loading...' }} <ion-icon name="trash-outline" class="bin" @click="removeFromList(idx)"></ion-icon>
         </p>
         <p>
           <input placeholder="Enter new item" v-model="newItem" autocomplete="off" /> <ion-icon class="tick" name="checkmark-outline" @click="addNewItem()"></ion-icon>
@@ -169,7 +169,7 @@ onMounted(async () => {
 
 <style scoped lang="scss">
 .title-default {
-  color: #8c8c8c;
+  color: #ffffff;
 }
 .sc-ion-buttons-md-s .button-clear {
   margin-right: 10vw;
@@ -220,17 +220,21 @@ onMounted(async () => {
   }
 }
 
-.tick {
+.tick, .bin {
   font-weight: 900;
   font-size: 20px;
-  color: #333333;
+  color: #ff0000;
 }
 
 .refresh {
   position: absolute;
   right: 20px;
   bottom: 40px;
-  color: #000;
+  color: #ff0000;
   font-size: 30px;
+
+  ion-icon.hydrated {
+    color: var(--ion-toolbar-color);
+  }
 }
 </style>
